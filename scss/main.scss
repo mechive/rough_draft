@@ -103,6 +103,9 @@ body{
                 border-radius: 50px;
                 h1{
                     color: black;
+                    span{
+                        color: rgb(0, 0, 0);
+                    }
                 }
             }
             .main-title{
@@ -204,12 +207,16 @@ body{
         // border: white 1px solid;
         border-radius: 5px;
         box-shadow: 1px 1px 9px white;
+        width: 80%;
+        align-self: center;
         h1{
             width: 100%;
             margin: 1%;
             color: white;
         }
         .item{
+            margin: 2%;
+            margin-bottom: 5%;
             width: 90%;
             display: flex;
             justify-content: center;
@@ -222,6 +229,32 @@ body{
             }
             .item-text{
                 padding: 1%;
+                h1{
+                    color: white;
+                    margin: 0%;
+                }
+                p{
+                    color: white;
+                }
+            }
+        }
+        .item-2{
+            width: 90%;
+            display: flex;
+            justify-content: center;
+            flex-direction: row-reverse;
+            .img-wrapper{
+                width: 100%;
+                img{
+                    width: 100%;
+                }
+            }
+            .item-text{
+                padding: 1%;
+                h1{
+                    margin: 0%;
+                    color: white;
+                }
                 p{
                     color: white;
                 }
@@ -236,7 +269,7 @@ body{
         justify-content: center;
         margin-top: auto;
         p{
-
+            color: orange;
         }
     }
 }

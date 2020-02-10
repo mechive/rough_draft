@@ -75,6 +75,8 @@ body {
         border-radius: 50px; }
         body .banner .banner-text .accent-title h1 {
           color: black; }
+          body .banner .banner-text .accent-title h1 span {
+            color: black; }
       body .banner .banner-text .main-title h1 {
         color: black; }
   body .cards {
@@ -149,12 +151,16 @@ body {
     justify-content: center;
     align-items: center;
     border-radius: 5px;
-    box-shadow: 1px 1px 9px white; }
+    box-shadow: 1px 1px 9px white;
+    width: 80%;
+    align-self: center; }
     body .content h1 {
       width: 100%;
       margin: 1%;
       color: white; }
     body .content .item {
+      margin: 2%;
+      margin-bottom: 5%;
       width: 90%;
       display: flex;
       justify-content: center;
@@ -165,7 +171,26 @@ body {
           width: 100%; }
       body .content .item .item-text {
         padding: 1%; }
+        body .content .item .item-text h1 {
+          color: white;
+          margin: 0%; }
         body .content .item .item-text p {
+          color: white; }
+    body .content .item-2 {
+      width: 90%;
+      display: flex;
+      justify-content: center;
+      flex-direction: row-reverse; }
+      body .content .item-2 .img-wrapper {
+        width: 100%; }
+        body .content .item-2 .img-wrapper img {
+          width: 100%; }
+      body .content .item-2 .item-text {
+        padding: 1%; }
+        body .content .item-2 .item-text h1 {
+          margin: 0%;
+          color: white; }
+        body .content .item-2 .item-text p {
           color: white; }
   body .footer {
     box-shadow: 1px 1px 9px;
@@ -174,3 +199,5 @@ body {
     display: flex;
     justify-content: center;
     margin-top: auto; }
+    body .footer p {
+      color: orange; }

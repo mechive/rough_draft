@@ -6,20 +6,9 @@ html{
 body{
     padding: 0%;
     margin: 0%;
-
-
     // font-family: 'Lemonada', cursive;
-    
-
     // font-family: 'Heebo', sans-serif;
-    
-
     font-family: 'Cabin', sans-serif;
-
-
-
-
-
     display: flex;
     flex-direction: column;
     // height: 100vh;
@@ -131,7 +120,7 @@ body{
         display: flex;
         justify-content: center;
         align-self: center;
-        width: 60%;
+        width: 70%;
         margin: 1% 0%;
         position: relative;
         .card-1{
@@ -141,24 +130,26 @@ body{
             background-color: rgba(10%,10%,10%,.9);
             display: flex;
             align-items: center;
-            height: 10vh;
+            height: 12vh;
             box-shadow: 1px 1px 9px;
             transition: ease-out .3s;
+            flex-direction: column;
+
             &:hover{
                 box-shadow: 1px 1px 9px orange;
                 cursor: pointer;
-
             }
-
-
-            p{
+            i{
                 color: white;
-
+            }
+            p{
+                padding: 3% 0%;
+                color: white;
             }
         }
         .card-2{
             margin: 1%;
-            height: 10vh;
+            height: 12vh;
             display: flex;
             flex: 1;
             box-shadow: 1px 1px 9px;
@@ -166,32 +157,36 @@ body{
             background-color: rgba(10%,10%,10%,.9);
             align-items: center;
             transition: ease-out .3s;
+            flex-direction: column;
 
             &:hover{
                 box-shadow: 1px 1px 9px orange;
                 cursor: pointer;
-
             }
-
+            i{
+                color: white;
+            }
             p{
                 color: white;
-
             } 
         }
         .card-3{
             margin: 1%;
-            height: 10vh;
+            height: 12vh;
             flex: 1;
             box-shadow: 1px 1px 9px;
             padding: 5% 5%;
             background-color: rgba(10%,10%,10%,.9);
             display: flex;
             align-items: center;
+            flex-direction: column;
             transition: ease-out .3s;
-
             &:hover{
                 box-shadow: 1px 1px 9px orange;
                 cursor: pointer;
+            }
+            i{
+                color: white;
             }
             p{
                 color: white;

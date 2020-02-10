@@ -1,0 +1,22 @@
+{
+  "name": "modern_theme",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sass": "node-sass -w scss/ -o css/ --recursive"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mickbeck/modern_theme.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mickbeck/modern_theme/issues"
+  },
+  "homepage": "https://github.com/mickbeck/modern_theme#readme",
+  "dependencies": {
+    "node-sass": "^4.13.1"
+  }
+}

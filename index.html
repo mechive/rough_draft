@@ -21,7 +21,7 @@
                 </div>
                 <div class="bottom">
                     <div class="left-links">
-                        <i class="fas fa-bars fa-2x mobile-menu"id="menu-button-id" onclick="menuToggle()"></i>
+                        <i class="fas fa-bars fa-2x mobile-menu"id="menu-button-id"></i>
                         <a href="index.html" class="current">Home</a>
                         <a href="about.html">About Us</a>
                         <a href="health.html">Sleep & Health</a>
@@ -98,6 +98,14 @@
     <div class="footer">
         <p>Copyright &copy; 2020</p>
     </div>
-    <script src="js/mobile-menu.js"></script>
+    <!-- <script src="js/mobile-menu.js"></script> -->
+    <script src="js/jQuery 3.4.1.js"></script>
+    <script>
+        $(document).ready(function(){
+            $( "#menu-button-id" ).click(function() {
+                $( "#test" ).toggle();
+            });
+        });
+    </script>
 </body>
 </html>

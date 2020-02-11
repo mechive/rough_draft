@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/mickbeck/modern_theme#readme",
   "dependencies": {
+    "jquery": "^3.4.1",
     "node-sass": "^4.13.1"
   }
 }

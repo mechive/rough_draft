@@ -45,7 +45,11 @@ body {
             display: flex;
             align-items: center;
             flex-wrap: nowrap;
-            justify-content: flex-end; }
+            justify-content: flex-end;
+            padding: 1%; }
+            body .header .nav .main-nav .bottom .left-links .mobile-menu {
+              display: none;
+              color: white; }
             body .header .nav .main-nav .bottom .left-links a {
               display: flex;
               letter-spacing: 2px;
@@ -78,152 +82,97 @@ body {
                 transition: ease-in .1s; }
                 body .header .nav .main-nav .bottom .socials a i:hover {
                   color: lightskyblue; }
-  body .banner {
-    height: 60vh;
-    background: url(../img/bed-1.jpg);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+  body .front-page {
     display: flex;
     flex-direction: column;
-    align-items: center; }
-    body .banner .banner-text {
-      margin-top: 15vh; }
-      body .banner .banner-text .accent-title {
-        margin: 0%;
-        text-align: center;
-        border-radius: 50px; }
-        body .banner .banner-text .accent-title h1 {
-          color: black; }
-          body .banner .banner-text .accent-title h1 span {
-            color: black; }
-      body .banner .banner-text .main-title h1 {
-        color: black; }
-  body .cards {
-    transform: translateY(-50%);
-    display: flex;
-    justify-content: center;
-    align-self: center;
-    width: 70%;
-    margin: 1% 0%;
-    position: relative; }
-    body .cards .card-1 {
-      margin: 1%;
-      flex: 1;
-      padding: 5% 5%;
-      background-color: rgba(26, 26, 26, 0.9);
+    box-shadow: 1px 1px 9px; }
+    body .front-page .banner {
+      height: 60vh;
+      background: url(../img/bed-1.jpg);
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
       display: flex;
-      align-items: center;
-      height: 12vh;
-      box-shadow: 1px 1px 9px;
-      transition: ease-out .3s;
-      flex-direction: column; }
-      body .cards .card-1:hover {
-        box-shadow: 1px 1px 9px lightskyblue;
-        cursor: pointer; }
-        body .cards .card-1:hover i {
-          color: white; }
-      body .cards .card-1 i {
-        color: lightskyblue;
-        transition: ease-out .3s; }
-      body .cards .card-1 p {
-        padding: 3% 0%;
-        color: white; }
-    body .cards .card-2 {
-      margin: 1%;
-      height: 12vh;
-      display: flex;
-      flex: 1;
-      box-shadow: 1px 1px 9px;
-      padding: 5% 5%;
-      background-color: rgba(26, 26, 26, 0.9);
-      align-items: center;
-      transition: ease-out .3s;
-      flex-direction: column; }
-      body .cards .card-2:hover {
-        box-shadow: 1px 1px 9px lightskyblue;
-        cursor: pointer; }
-        body .cards .card-2:hover i {
-          color: white; }
-      body .cards .card-2 i {
-        color: lightskyblue;
-        transition: ease-out .3s; }
-      body .cards .card-2 p {
-        color: white; }
-    body .cards .card-3 {
-      margin: 1%;
-      height: 12vh;
-      flex: 1;
-      box-shadow: 1px 1px 9px;
-      padding: 5% 5%;
-      background-color: rgba(26, 26, 26, 0.9);
-      display: flex;
-      align-items: center;
       flex-direction: column;
-      transition: ease-out .3s; }
-      body .cards .card-3:hover {
-        box-shadow: 1px 1px 9px lightskyblue;
-        cursor: pointer; }
-        body .cards .card-3:hover i {
+      align-items: center; }
+      body .front-page .banner .banner-text-wrapper {
+        margin-top: 15vh; }
+        body .front-page .banner .banner-text-wrapper .main-title {
+          margin: 0%;
+          text-align: center;
+          border-radius: 50px; }
+          body .front-page .banner .banner-text-wrapper .main-title h1 {
+            width: 100%;
+            text-align: center;
+            color: black; }
+        body .front-page .banner .banner-text-wrapper .sub-title h1 {
+          width: 100%;
+          text-align: center;
+          color: black; }
+    body .front-page .cards-wrapper {
+      transform: translateY(-50%);
+      display: flex;
+      justify-content: center;
+      align-self: center;
+      width: 70%;
+      margin: 1% 0%;
+      position: relative; }
+      body .front-page .cards-wrapper .card {
+        margin: 1%;
+        flex: 1;
+        padding: 5% 5%;
+        background-color: rgba(26, 26, 26, 0.9);
+        display: flex;
+        align-items: center;
+        height: 12vh;
+        box-shadow: 1px 1px 9px;
+        transition: ease-out .3s;
+        flex-direction: column; }
+        body .front-page .cards-wrapper .card i {
+          color: lightskyblue;
+          transition: ease-out .3s; }
+        body .front-page .cards-wrapper .card p {
+          padding: 3% 0%;
           color: white; }
-      body .cards .card-3 i {
-        color: lightskyblue;
-        transition: ease-out .3s; }
-      body .cards .card-3 p {
-        color: white; }
-  body .content {
-    padding-bottom: 5%;
-    padding: 2%;
-    margin: 2%;
-    margin-bottom: 15%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    border-radius: 5px;
-    box-shadow: 1px 1px 9px lightskyblue;
-    width: 80%;
-    align-self: center;
-    background-color: #1a1a1a; }
-    body .content h1 {
-      width: 100%;
-      margin: 1%;
-      color: white; }
-    body .content .item {
+        body .front-page .cards-wrapper .card:hover {
+          box-shadow: 1px 1px 9px lightskyblue;
+          cursor: pointer; }
+          body .front-page .cards-wrapper .card:hover i {
+            color: white; }
+    body .front-page .content {
+      align-self: center;
+      width: 80%;
+      padding: 2%;
+      padding-bottom: 5%;
       margin: 2%;
-      margin-bottom: 5%;
-      width: 90%;
+      margin-bottom: 15%;
       display: flex;
+      flex-direction: column;
       justify-content: center;
-      flex-direction: row-reverse; }
-      body .content .item .img-wrapper {
-        width: 100%; }
-        body .content .item .img-wrapper img {
-          width: 100%; }
-      body .content .item .item-text {
-        padding: 1%; }
-        body .content .item .item-text h1 {
-          color: white;
-          margin: 0%; }
-        body .content .item .item-text p {
-          color: white; }
-    body .content .item-2 {
-      width: 90%;
-      display: flex;
-      justify-content: center;
-      flex-direction: row-reverse; }
-      body .content .item-2 .img-wrapper {
-        width: 100%; }
-        body .content .item-2 .img-wrapper img {
-          width: 100%; }
-      body .content .item-2 .item-text {
-        padding: 1%; }
-        body .content .item-2 .item-text h1 {
-          margin: 0%;
-          color: white; }
-        body .content .item-2 .item-text p {
-          color: white; }
-  body .about-content {
+      align-items: center;
+      border-radius: 5px;
+      box-shadow: 1px 1px 9px lightskyblue;
+      background-color: #1a1a1a; }
+      body .front-page .content .post {
+        width: 90%;
+        margin: 2%;
+        margin-bottom: 5%;
+        display: flex;
+        justify-content: center;
+        flex-direction: row-reverse; }
+        body .front-page .content .post .img-wrapper {
+          flex: 1; }
+          body .front-page .content .post .img-wrapper img {
+            width: 100%; }
+        body .front-page .content .post .post-text {
+          flex: 1;
+          padding: 1%; }
+          body .front-page .content .post .post-text h1 {
+            color: white;
+            margin: 0%; }
+          body .front-page .content .post .post-text p {
+            color: white; }
+  body .about-page {
     background-color: #1a1a1a;
     width: 96%;
     padding: 2%;
@@ -232,34 +181,38 @@ body {
     flex-direction: column;
     align-items: center;
     margin: 0% 0%; }
-    body .about-content .about-header {
+    body .about-page .banner {
       height: 30vh;
       display: flex;
       justify-content: center;
       align-items: center;
       flex-direction: column; }
-      body .about-content .about-header h1 {
+      body .about-page .banner h1 {
         color: white; }
-      body .about-content .about-header p {
+      body .about-page .banner p {
         color: white; }
-    body .about-content .item-wrapper {
+    body .about-page .content {
       width: 80%;
       justify-content: center;
       margin-bottom: 2%;
-      display: flex; }
-      body .about-content .item-wrapper .img-wrapper {
-        width: 100%;
+      display: flex;
+      flex-direction: column; }
+      body .about-page .content .post .img-wrapper {
+        float: left;
+        width: 30%;
         margin-right: 2%; }
-        body .about-content .item-wrapper .img-wrapper img {
+        body .about-page .content .post .img-wrapper img {
           width: 100%; }
-      body .about-content .item-wrapper .item-text {
+      body .about-page .content .post .post-text {
+        width: 100%;
+        float: right;
         padding: 0%; }
-        body .about-content .item-wrapper .item-text h1 {
+        body .about-page .content .post .post-text h1 {
           margin: 0%;
           color: white; }
-        body .about-content .item-wrapper .item-text p {
+        body .about-page .content .post .post-text p {
           color: white; }
-  body .health-content {
+  body .health-page {
     background-color: #1a1a1a;
     width: 96%;
     padding: 2%;
@@ -268,107 +221,113 @@ body {
     flex-direction: column;
     align-items: center;
     margin: 0% 0%; }
-    body .health-content .health-header {
+    body .health-page .banner {
       height: 30vh;
       display: flex;
       justify-content: center;
       align-items: center;
       flex-direction: column; }
-      body .health-content .health-header h1 {
+      body .health-page .banner h1 {
+        text-align: center;
         color: white; }
-      body .health-content .health-header p {
+      body .health-page .banner p {
+        text-align: center;
         color: white; }
-    body .health-content .item-wrapper {
+    body .health-page .content {
       width: 80%;
       justify-content: center;
       margin-bottom: 2%;
       display: flex;
       flex-direction: column; }
-      body .health-content .item-wrapper .img-wrapper {
-        width: 100%;
-        margin-right: 2%; }
-        body .health-content .item-wrapper .img-wrapper img {
-          width: 100%; }
-      body .health-content .item-wrapper .item {
+      body .health-page .content .post {
         display: flex;
         flex-direction: row;
         padding: 0%; }
-        body .health-content .item-wrapper .item .item-text h1 {
-          margin: 0%;
-          color: white; }
-        body .health-content .item-wrapper .item .item-text p {
-          color: white; }
-        body .health-content .item-wrapper .item .img-wrapper {
-          width: 100%;
-          margin-right: 0%; }
-          body .health-content .item-wrapper .item .img-wrapper img {
-            width: 100%; }
-      body .health-content .item-wrapper .item-list {
+        body .health-page .content .post .post-text {
+          margin: 1%; }
+          body .health-page .content .post .post-text h1 {
+            margin: 0%;
+            color: white; }
+          body .health-page .content .post .post-text p {
+            color: white; }
+          body .health-page .content .post .post-text .img-wrapper {
+            float: right;
+            width: 540px;
+            margin: 1%;
+            margin-left: 3%;
+            margin-bottom: 3%; }
+            body .health-page .content .post .post-text .img-wrapper img {
+              width: 100%; }
+      body .health-page .content .post-list-wrapper {
         margin: 5% 0%;
         display: flex;
         align-self: flex-start;
         width: 100%;
         justify-content: space-between; }
-        body .health-content .item-wrapper .item-list .img-wrapper {
+        body .health-page .content .post-list-wrapper .img-wrapper {
           flex: 1; }
-          body .health-content .item-wrapper .item-list .img-wrapper img {
+          body .health-page .content .post-list-wrapper .img-wrapper img {
             width: 100%; }
-        body .health-content .item-wrapper .item-list .item-list-wrap {
+        body .health-page .content .post-list-wrapper .post-list {
           flex: 1;
           display: flex;
           flex-direction: column;
-          padding: 0%; }
-          body .health-content .item-wrapper .item-list .item-list-wrap h1 {
+          padding: 0%;
+          padding-left: 2%; }
+          body .health-page .content .post-list-wrapper .post-list h1 {
             padding: 5%;
             margin: 0%;
             margin-top: 2%;
             color: white;
             box-shadow: 1px 1px 6px lightskyblue; }
-          body .health-content .item-wrapper .item-list .item-list-wrap ul {
+          body .health-page .content .post-list-wrapper .post-list ul {
             display: flex;
             flex-direction: column;
             list-style-type: none;
             padding: 0%;
             margin-top: auto;
             width: 100%; }
-            body .health-content .item-wrapper .item-list .item-list-wrap ul li {
+            body .health-page .content .post-list-wrapper .post-list ul li {
               color: white;
               padding: 2%;
               margin: 1%;
               box-shadow: 1px 1px 6px lightskyblue;
               border-radius: 5px; }
-  body #contact {
-    width: 98%;
-    margin-left: auto;
-    margin-right: auto;
+  body .contact-page {
+    width: 96%;
+    padding: 2%;
+    padding-bottom: 5%;
     margin: 0%;
-    margin-bottom: 5%;
-    padding: 1%;
     display: flex;
     flex-direction: column;
-    align-items: center; }
-    body #contact h1 {
-      margin: 0%;
-      margin-top: 10vh;
-      padding: 1%;
-      color: white; }
-    body #contact p {
-      color: white; }
-    body #contact form {
+    align-items: center;
+    box-shadow: 1px 1px 9px;
+    background-color: #1a1a1a; }
+    body .contact-page .banner {
+      height: 30vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column; }
+      body .contact-page .banner h1 {
+        color: white; }
+      body .contact-page .banner p {
+        color: white; }
+    body .contact-page form {
       margin-top: 2%;
       box-shadow: 1px 1px 9px lightskyblue;
       padding: 3%;
       border-radius: 5px;
       width: 60%; }
-      body #contact form #input-boxes {
+      body .contact-page form #input-boxes {
         display: flex;
         flex-direction: column;
         width: 100%; }
-        body #contact form #input-boxes #small-boxes {
+        body .contact-page form #input-boxes #small-boxes {
           flex-wrap: wrap;
           display: flex;
           flex-direction: row; }
-          body #contact form #input-boxes #small-boxes #name-input {
+          body .contact-page form #input-boxes #small-boxes #name-input {
             flex: 1;
             font-family: 'Ubuntu', sans-serif;
             font-size: 1.5rem;
@@ -376,7 +335,7 @@ body {
             padding: 1%;
             width: 98%;
             box-shadow: 1px 1px 1px; }
-          body #contact form #input-boxes #small-boxes #email-input {
+          body .contact-page form #input-boxes #small-boxes #email-input {
             flex: 1;
             font-family: 'Ubuntu', sans-serif;
             font-size: 1.5rem;
@@ -384,14 +343,14 @@ body {
             padding: 1%;
             width: 98%;
             box-shadow: 1px 1px 1px; }
-        body #contact form #input-boxes #text-input {
+        body .contact-page form #input-boxes #text-input {
           resize: none;
           font-family: 'Ubuntu', sans-serif;
           font-size: 1.5rem;
           margin: 1%;
           padding: 1%;
           box-shadow: 1px 1px 1px; }
-      body #contact form #button-box button {
+      body .contact-page form #button-box button {
         margin: 1%;
         margin-top: 0%;
         padding: 1%;
@@ -399,7 +358,7 @@ body {
         font-size: 1.5rem;
         box-shadow: 1px 1px 1px;
         transition: ease-in .1s; }
-        body #contact form #button-box button:hover {
+        body .contact-page form #button-box button:hover {
           background-color: #262626;
           color: lightskyblue;
           cursor: pointer;
@@ -413,3 +372,656 @@ body {
     margin-top: auto; }
     body .footer p {
       color: lightskyblue; }
+
+@media screen and (min-width: 798px) and (max-width: 1290px) {
+  body .health-page {
+    background-color: #1a1a1a;
+    width: 96%;
+    padding: 2%;
+    box-shadow: 1px 1px 9px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0% 0%; }
+    body .health-page .banner {
+      height: 30vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column; }
+      body .health-page .banner h1 {
+        color: white; }
+      body .health-page .banner p {
+        color: white; }
+    body .health-page .content {
+      width: 80%;
+      justify-content: center;
+      margin-bottom: 2%;
+      display: flex;
+      flex-direction: column; }
+      body .health-page .content .post {
+        display: flex;
+        flex-direction: row;
+        padding: 0%; }
+        body .health-page .content .post .post-text {
+          margin: 1%; }
+          body .health-page .content .post .post-text h1 {
+            margin: 0%;
+            color: white; }
+          body .health-page .content .post .post-text p {
+            color: white; }
+          body .health-page .content .post .post-text .img-wrapper {
+            float: right;
+            width: 450px; }
+            body .health-page .content .post .post-text .img-wrapper img {
+              width: 100%; }
+      body .health-page .content .post-list-wrapper {
+        margin: 5% 0%;
+        display: flex;
+        align-self: flex-start;
+        width: 100%;
+        justify-content: space-between; }
+        body .health-page .content .post-list-wrapper .img-wrapper {
+          flex: 1; }
+          body .health-page .content .post-list-wrapper .img-wrapper img {
+            width: 100%; }
+        body .health-page .content .post-list-wrapper .post-list {
+          flex: 1;
+          display: flex;
+          flex-direction: column;
+          padding: 0%;
+          padding-left: 2%; }
+          body .health-page .content .post-list-wrapper .post-list h1 {
+            padding: 5%;
+            margin: 0%;
+            margin-top: 2%;
+            color: white;
+            box-shadow: 1px 1px 6px lightskyblue; }
+          body .health-page .content .post-list-wrapper .post-list ul {
+            display: flex;
+            flex-direction: column;
+            list-style-type: none;
+            padding: 0%;
+            margin-top: auto;
+            width: 100%; }
+            body .health-page .content .post-list-wrapper .post-list ul li {
+              color: white;
+              padding: 2%;
+              margin: 1%;
+              box-shadow: 1px 1px 6px lightskyblue;
+              border-radius: 5px; } }
+
+@media screen and (max-width: 798px) {
+  body .header .nav {
+    padding: 0% 2%;
+    margin: 0%;
+    margin-top: 2%; }
+    body .header .nav .main-nav {
+      display: flex;
+      justify-content: center;
+      align-content: center;
+      flex-direction: column; }
+      body .header .nav .main-nav .top {
+        padding-left: 10%;
+        flex: 1;
+        display: flex; }
+        body .header .nav .main-nav .top .logo a {
+          text-decoration: none;
+          display: flex;
+          align-items: center;
+          margin: 0%; }
+          body .header .nav .main-nav .top .logo a h1 {
+            margin: 0%;
+            color: white; }
+            body .header .nav .main-nav .top .logo a h1 i {
+              color: white;
+              margin: 0%; }
+      body .header .nav .main-nav .bottom {
+        padding-top: 2%;
+        padding-bottom: 1%;
+        display: flex;
+        justify-content: center;
+        flex-direction: row-reverse; }
+        body .header .nav .main-nav .bottom .left-links {
+          flex: 4;
+          display: flex;
+          align-items: center;
+          flex-wrap: nowrap;
+          justify-content: flex-end; }
+          body .header .nav .main-nav .bottom .left-links .mobile-menu {
+            display: flex;
+            justify-content: flex-end; }
+          body .header .nav .main-nav .bottom .left-links a {
+            display: none;
+            letter-spacing: 2px;
+            flex-wrap: nowrap;
+            padding: 0px 5px;
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            font-size: 1.2rem; }
+          body .header .nav .main-nav .bottom .left-links .current {
+            color: lightskyblue; }
+        body .header .nav .main-nav .bottom .socials {
+          flex: 1;
+          margin: 0%;
+          padding: 0% 0%;
+          display: flex;
+          justify-content: center;
+          align-items: center; }
+          body .header .nav .main-nav .bottom .socials a {
+            margin: 1%;
+            margin-bottom: 0%;
+            background-color: white;
+            border-radius: 5px;
+            transition: ease-in .1s; }
+            body .header .nav .main-nav .bottom .socials a:hover {
+              background-color: #1a1a1a; }
+            body .header .nav .main-nav .bottom .socials a i {
+              padding: 0.3rem 0.7rem;
+              color: black;
+              transition: ease-in .1s; }
+              body .header .nav .main-nav .bottom .socials a i:hover {
+                color: lightskyblue; }
+  body .front-page {
+    display: flex;
+    flex-direction: column;
+    box-shadow: 1px 1px 9px; }
+    body .front-page .banner {
+      height: 36vh;
+      background: url(../img/bed-1.jpg);
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      display: flex;
+      flex-direction: column;
+      align-items: center; }
+      body .front-page .banner .banner-text-wrapper {
+        margin-top: 9vh; }
+        body .front-page .banner .banner-text-wrapper .main-title {
+          margin: 0%;
+          text-align: center;
+          border-radius: 50px; }
+          body .front-page .banner .banner-text-wrapper .main-title h1 {
+            width: 100%;
+            text-align: center;
+            color: black; }
+        body .front-page .banner .banner-text-wrapper .sub-title h1 {
+          width: 100%;
+          text-align: center;
+          color: black; }
+    body .front-page .cards-wrapper {
+      transform: translateY(0%);
+      display: flex;
+      flex-direction: column;
+      align-self: center;
+      width: 80%;
+      margin: 5% 0%;
+      position: relative; }
+      body .front-page .cards-wrapper .card {
+        margin: 3%;
+        flex: 1;
+        padding: 5% 5%;
+        background-color: rgba(26, 26, 26, 0.9);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 9vh;
+        box-shadow: 1px 1px 9px;
+        transition: ease-out .3s;
+        flex-direction: column; }
+        body .front-page .cards-wrapper .card i {
+          color: lightskyblue;
+          transition: ease-out .3s; }
+        body .front-page .cards-wrapper .card p {
+          padding: 3% 0%;
+          color: white; }
+        body .front-page .cards-wrapper .card:hover {
+          box-shadow: 1px 1px 9px lightskyblue;
+          cursor: pointer; }
+          body .front-page .cards-wrapper .card:hover i {
+            color: white; }
+    body .front-page .content {
+      align-self: center;
+      width: 90%;
+      padding: 2%;
+      padding-bottom: 5%;
+      margin: 2%;
+      margin-bottom: 15%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      border-radius: 5px;
+      box-shadow: 1px 1px 9px lightskyblue;
+      background-color: #1a1a1a; }
+      body .front-page .content .post {
+        width: 100%;
+        margin: 2%;
+        margin-bottom: 5%;
+        display: flex;
+        justify-content: center;
+        flex-direction: column; }
+        body .front-page .content .post .img-wrapper {
+          flex: 1; }
+          body .front-page .content .post .img-wrapper img {
+            width: 100%; }
+        body .front-page .content .post .post-text {
+          flex: 1;
+          padding: 1%; }
+          body .front-page .content .post .post-text h1 {
+            color: white;
+            margin: 0%; }
+          body .front-page .content .post .post-text p {
+            color: white; }
+  body .about-page {
+    background-color: #1a1a1a;
+    width: 96%;
+    padding: 2%;
+    box-shadow: 1px 1px 9px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0% 0%; }
+    body .about-page .banner {
+      height: 30vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      padding: 0% 3%; }
+      body .about-page .banner h1 {
+        width: 100%;
+        text-align: center;
+        color: white; }
+      body .about-page .banner p {
+        width: 100%;
+        text-align: center;
+        color: white; }
+    body .about-page .content {
+      width: 80%;
+      justify-content: center;
+      margin-bottom: 2%;
+      display: flex;
+      flex-direction: column; }
+      body .about-page .content .post {
+        display: flex;
+        flex-direction: column; }
+        body .about-page .content .post .img-wrapper {
+          width: 100%;
+          flex: 1;
+          margin-right: 2%; }
+          body .about-page .content .post .img-wrapper img {
+            width: 100%; }
+        body .about-page .content .post .post-text {
+          flex: 1;
+          padding: 0%; }
+          body .about-page .content .post .post-text h1 {
+            margin: 0%;
+            color: white; }
+          body .about-page .content .post .post-text p {
+            color: white; }
+  body .health-page {
+    background-color: #1a1a1a;
+    width: 96%;
+    padding: 2%;
+    box-shadow: 1px 1px 9px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0% 0%; }
+    body .health-page .banner {
+      height: 30vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column; }
+      body .health-page .banner h1 {
+        color: white; }
+      body .health-page .banner p {
+        color: white; }
+    body .health-page .content {
+      width: 80%;
+      justify-content: center;
+      margin-bottom: 2%;
+      display: flex;
+      flex-direction: column; }
+      body .health-page .content .post {
+        display: flex;
+        flex-direction: row;
+        padding: 0%; }
+        body .health-page .content .post .post-text {
+          margin: 1%; }
+          body .health-page .content .post .post-text h1 {
+            margin: 0%;
+            color: white; }
+          body .health-page .content .post .post-text p {
+            color: white; }
+          body .health-page .content .post .post-text .img-wrapper {
+            width: 100%; }
+            body .health-page .content .post .post-text .img-wrapper img {
+              width: 100%; }
+      body .health-page .content .post-list-wrapper {
+        margin: 5% 0%;
+        display: flex;
+        align-self: flex-start;
+        width: 100%;
+        justify-content: space-between; }
+        body .health-page .content .post-list-wrapper .img-wrapper {
+          flex: 1; }
+          body .health-page .content .post-list-wrapper .img-wrapper img {
+            width: 100%; }
+        body .health-page .content .post-list-wrapper .post-list {
+          flex: 1;
+          display: flex;
+          flex-direction: column;
+          padding: 0%;
+          padding-left: 2%; }
+          body .health-page .content .post-list-wrapper .post-list h1 {
+            padding: 5%;
+            margin: 0%;
+            margin-top: 2%;
+            color: white;
+            box-shadow: 1px 1px 6px lightskyblue; }
+          body .health-page .content .post-list-wrapper .post-list ul {
+            display: flex;
+            flex-direction: column;
+            list-style-type: none;
+            padding: 0%;
+            margin-top: auto;
+            width: 100%; }
+            body .health-page .content .post-list-wrapper .post-list ul li {
+              color: white;
+              padding: 2%;
+              margin: 1%;
+              box-shadow: 1px 1px 6px lightskyblue;
+              border-radius: 5px; } }
+
+@media screen and (max-width: 500px) {
+  body .header .nav {
+    padding: 0% 2%;
+    margin: 0%;
+    margin-top: 2%; }
+    body .header .nav .main-nav {
+      display: flex;
+      justify-content: center;
+      align-content: center;
+      flex-direction: column; }
+      body .header .nav .main-nav .top {
+        padding-left: 10%;
+        flex: 1;
+        display: flex; }
+        body .header .nav .main-nav .top .logo a {
+          text-decoration: none;
+          display: flex;
+          align-items: center;
+          margin: 0%; }
+          body .header .nav .main-nav .top .logo a h1 {
+            margin: 0%;
+            font-size: 1.5rem;
+            color: white; }
+            body .header .nav .main-nav .top .logo a h1 i {
+              color: white;
+              margin: 0%; }
+      body .header .nav .main-nav .bottom {
+        padding-top: 2%;
+        padding-bottom: 1%;
+        display: flex;
+        justify-content: center;
+        flex-direction: row-reverse; }
+        body .header .nav .main-nav .bottom .left-links {
+          flex: 4;
+          display: flex;
+          align-items: center;
+          flex-wrap: nowrap;
+          justify-content: flex-end; }
+          body .header .nav .main-nav .bottom .left-links .mobile-menu {
+            display: flex;
+            justify-content: flex-end; }
+          body .header .nav .main-nav .bottom .left-links a {
+            display: none;
+            letter-spacing: 2px;
+            flex-wrap: nowrap;
+            padding: 0px 5px;
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            font-size: 1.2rem; }
+          body .header .nav .main-nav .bottom .left-links .current {
+            color: lightskyblue; }
+        body .header .nav .main-nav .bottom .socials {
+          flex: 1;
+          margin: 0%;
+          padding: 0% 0%;
+          display: flex;
+          justify-content: center;
+          align-items: center; }
+          body .header .nav .main-nav .bottom .socials a {
+            margin: 1%;
+            margin-bottom: 0%;
+            background-color: white;
+            border-radius: 5px;
+            transition: ease-in .1s; }
+            body .header .nav .main-nav .bottom .socials a:hover {
+              background-color: #1a1a1a; }
+            body .header .nav .main-nav .bottom .socials a i {
+              padding: 0.3rem 0.7rem;
+              color: black;
+              transition: ease-in .1s; }
+              body .header .nav .main-nav .bottom .socials a i:hover {
+                color: lightskyblue; }
+  body .front-page {
+    display: flex;
+    flex-direction: column;
+    box-shadow: 1px 1px 9px; }
+    body .front-page .banner {
+      height: 40vh;
+      background: url(../img/bed-1.jpg);
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      display: flex;
+      flex-direction: column;
+      align-items: center; }
+      body .front-page .banner .banner-text-wrapper {
+        margin-top: 9vh; }
+        body .front-page .banner .banner-text-wrapper .main-title {
+          margin: 0%;
+          text-align: center;
+          border-radius: 50px; }
+          body .front-page .banner .banner-text-wrapper .main-title h1 {
+            width: 100%;
+            text-align: center;
+            color: black; }
+        body .front-page .banner .banner-text-wrapper .sub-title h1 {
+          width: 100%;
+          text-align: center;
+          color: black; }
+    body .front-page .cards-wrapper {
+      transform: translateY(0%);
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      align-self: center;
+      width: 90%;
+      margin: 5% 0%;
+      position: relative; }
+      body .front-page .cards-wrapper .card {
+        margin: 3%;
+        flex: 1;
+        padding: 5%;
+        background-color: rgba(26, 26, 26, 0.9);
+        display: flex;
+        align-items: center;
+        box-shadow: 1px 1px 9px;
+        transition: ease-out .3s;
+        flex-direction: column; }
+        body .front-page .cards-wrapper .card i {
+          color: lightskyblue;
+          transition: ease-out .3s; }
+        body .front-page .cards-wrapper .card p {
+          padding: 3% 0%;
+          color: white; }
+        body .front-page .cards-wrapper .card:hover {
+          box-shadow: 1px 1px 9px lightskyblue;
+          cursor: pointer; }
+          body .front-page .cards-wrapper .card:hover i {
+            color: white; }
+    body .front-page .content {
+      align-self: center;
+      width: 90%;
+      padding: 2%;
+      padding-bottom: 5%;
+      margin: 2%;
+      margin-bottom: 15%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      border-radius: 5px;
+      box-shadow: 1px 1px 9px lightskyblue;
+      background-color: #1a1a1a; }
+      body .front-page .content .post {
+        width: 100%;
+        margin: 2%;
+        margin-bottom: 5%;
+        display: flex;
+        justify-content: center;
+        flex-direction: column; }
+        body .front-page .content .post .img-wrapper {
+          flex: 1; }
+          body .front-page .content .post .img-wrapper img {
+            width: 100%; }
+        body .front-page .content .post .post-text {
+          flex: 1;
+          padding: 1%; }
+          body .front-page .content .post .post-text h1 {
+            color: white;
+            margin: 0%; }
+          body .front-page .content .post .post-text p {
+            color: white; }
+  body .about-page {
+    background-color: #1a1a1a;
+    width: 96%;
+    padding: 2%;
+    box-shadow: 1px 1px 9px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0% 0%; }
+    body .about-page .banner {
+      height: 30vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      padding: 0% 3%; }
+      body .about-page .banner h1 {
+        width: 100%;
+        text-align: center;
+        color: white;
+        font-size: 1.7rem; }
+      body .about-page .banner p {
+        width: 100%;
+        text-align: center;
+        color: white; }
+    body .about-page .content {
+      width: 80%;
+      justify-content: center;
+      margin-bottom: 2%;
+      display: flex;
+      flex-direction: column; }
+      body .about-page .content .post {
+        display: flex;
+        flex-direction: column; }
+        body .about-page .content .post .img-wrapper {
+          width: 100%;
+          flex: 1;
+          margin-right: 2%; }
+          body .about-page .content .post .img-wrapper img {
+            width: 100%; }
+        body .about-page .content .post .post-text {
+          flex: 1;
+          padding: 0%; }
+          body .about-page .content .post .post-text h1 {
+            margin: 0%;
+            color: white; }
+          body .about-page .content .post .post-text p {
+            color: white; }
+  body .health-page {
+    background-color: #1a1a1a;
+    width: 96%;
+    padding: 2%;
+    box-shadow: 1px 1px 9px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0% 0%; }
+    body .health-page .banner {
+      height: 30vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column; }
+      body .health-page .banner h1 {
+        font-size: 1.7rem;
+        color: white; }
+      body .health-page .banner p {
+        color: white; }
+    body .health-page .content {
+      width: 80%;
+      justify-content: center;
+      margin-bottom: 2%;
+      display: flex;
+      flex-direction: column; }
+      body .health-page .content .post {
+        display: flex;
+        flex-direction: row;
+        padding: 0%; }
+        body .health-page .content .post .post-text {
+          margin: 1%; }
+          body .health-page .content .post .post-text h1 {
+            margin: 0%;
+            color: white; }
+          body .health-page .content .post .post-text p {
+            color: white; }
+          body .health-page .content .post .post-text .img-wrapper {
+            width: 100%;
+            margin: 1%; }
+            body .health-page .content .post .post-text .img-wrapper img {
+              width: 100%; }
+      body .health-page .content .post-list-wrapper {
+        margin: 5% 0%;
+        display: flex;
+        align-self: flex-start;
+        width: 100%;
+        justify-content: space-between; }
+        body .health-page .content .post-list-wrapper .img-wrapper {
+          flex: 1; }
+          body .health-page .content .post-list-wrapper .img-wrapper img {
+            width: 100%; }
+        body .health-page .content .post-list-wrapper .post-list {
+          flex: 1;
+          display: flex;
+          flex-direction: column;
+          padding: 0%;
+          padding-left: 2%; }
+          body .health-page .content .post-list-wrapper .post-list h1 {
+            padding: 5%;
+            margin: 0%;
+            margin-top: 2%;
+            color: white;
+            box-shadow: 1px 1px 6px lightskyblue; }
+          body .health-page .content .post-list-wrapper .post-list ul {
+            display: flex;
+            flex-direction: column;
+            list-style-type: none;
+            padding: 0%;
+            margin-top: auto;
+            width: 100%; }
+            body .health-page .content .post-list-wrapper .post-list ul li {
+              color: white;
+              padding: 2%;
+              margin: 1%;
+              box-shadow: 1px 1px 6px lightskyblue;
+              border-radius: 5px; } }

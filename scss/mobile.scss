@@ -1,0 +1,846 @@
+@include mediaXl{
+}
+@include mediaLg{
+    body{
+        .health-page{
+            background-color: rgb(10%,10%,10%);
+            width: 96%;
+            padding: 2%;
+            box-shadow: 1px 1px 9px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 0% 0%;
+            .banner{
+                height: 30vh;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                h1{
+                    color: white;
+                }
+                p{
+                    color: white;
+                }
+            }
+            .content{
+                width: 80%;
+                justify-content: center;
+                margin-bottom: 2%;
+                display: flex;
+                flex-direction: column;
+                .post{
+                    display: flex;
+                    flex-direction: row;
+                    padding: 0%;
+                    .post-text{
+                        margin:1%;
+                        h1{
+                            margin: 0%;
+                            color: white;
+                        }
+                        p{
+                            color: white;
+                        }
+                        .img-wrapper{
+                            float: right;
+                            // width: 100%;
+                            width: 450px;
+                            // margin: 1%;
+                            img{
+                                width: 100%;
+                            }
+                        }
+                    }
+    
+                }
+                .post-list-wrapper{
+                    margin: 5% 0%;
+                    display: flex;
+                    align-self: flex-start;
+                    width: 100%;
+                    justify-content: space-between;
+                    .img-wrapper{
+                        flex: 1;
+                        img{
+                            width: 100%;
+                        }
+                    }
+                    .post-list{
+                            flex: 1;
+                            display: flex;
+                            flex-direction: column;
+                            padding: 0%;
+                            padding-left: 2%;
+                        h1{
+                            padding: 5%;
+                            margin: 0%;
+                            margin-top: 2%;
+                            color: white;
+                            box-shadow: 1px 1px 6px lightskyblue;
+                        }
+                        ul{
+                            display: flex;
+                            flex-direction: column;
+                            list-style-type: none;
+                            padding: 0%;
+                            margin-top: auto;
+                            width: 100%;
+                            li{
+                                color: white;
+                                padding: 2%;
+                                margin: 1%;
+                                box-shadow: 1px 1px 6px lightskyblue;
+                                border-radius: 5px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@include mediaMd{
+    body{
+        .header{
+            // background-color: rgb(10%,10%,10%);
+            .nav{
+                padding: 0% 2%;
+                margin: 0%;
+                margin-top: 2%;
+                // background-color: rgb(10%,10%,10%);
+                // background-color: red;
+                .main-nav{
+                    display: flex;
+                    justify-content: center;
+                    align-content: center;
+                    flex-direction: column;
+                    .top{
+                        padding-left:10% ;
+                        flex: 1;
+                        display: flex;
+                        .logo{
+                            a{
+                                text-decoration: none;
+                                display: flex;
+                                align-items: center;
+                                margin: 0%;
+                                h1{
+                                    margin: 0%;
+                                    // font-size: 1.9rem;
+                                    color: white;
+                                    i{
+                                        color: white;
+                                        margin: 0%;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    .bottom{
+                        padding-top:2%;
+                        padding-bottom: 1%;
+                        display: flex;
+                        justify-content: center;
+                        flex-direction: row-reverse;
+                        .left-links{
+                            .mobile-menu{
+                                display: flex;
+                                justify-content: flex-end;
+                            }
+                            flex: 4;
+                            display: flex;
+                            align-items: center;
+                            flex-wrap: nowrap;
+                            justify-content: flex-end;
+                            a{
+                                display: none;
+                                letter-spacing: 2px;
+                                flex-wrap: nowrap;
+                                padding: 0px 5px;
+                                text-decoration: none;
+                                color: white;
+                                font-weight: bold;
+                                font-size: 1.2rem;
+                            }
+                            .current{
+                                color: lightskyblue;
+                            }
+                        }
+                        .socials{
+                            flex: 1;
+                            margin: 0%;
+                            padding: 0% 0%;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            a{
+                                margin: 1%;
+                                margin-bottom: 0%;
+                                background-color: white;
+                                border-radius: 5px;
+                                transition: ease-in .1s;
+                                &:hover{
+                                    background-color: rgb(10%,10%,10%);
+                                }
+                                i{  
+                                    padding:0.3rem 0.7rem;
+                                    color: black;
+                                    transition: ease-in .1s;
+                                    &:hover{
+                                        color: lightskyblue;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .front-page{
+            display: flex;
+            flex-direction: column;
+            box-shadow: 1px 1px 9px;
+            .banner{
+                height: 36vh;
+                background: url(../img/bed-1.jpg);
+                background-size: cover;
+                background-position: center;
+                background-repeat: no-repeat;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                .banner-text-wrapper{
+                    margin-top: 9vh;
+                    .main-title{
+                        margin: 0%;
+                        text-align: center;
+                        border-radius: 50px;
+                        h1{
+                            width: 100%;
+                            text-align: center;
+    
+                            color: black;
+                        }
+                    }
+                    .sub-title{
+                        h1{
+                            width: 100%;
+                            text-align: center;
+                            color: black;
+                        }
+                    }
+                }
+            }
+            .cards-wrapper{
+                transform: translateY(0%);
+                display: flex;
+                // justify-content: center;
+                flex-direction: column;
+                align-self: center;
+                width: 80%;
+                margin: 5% 0%;
+                position: relative;
+                .card{
+                    margin: 3%;
+                    flex: 1;
+                    padding: 5% 5%;
+                    background-color: rgba(10%,10%,10%,.9);
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    height: 9vh;
+                    box-shadow: 1px 1px 9px;
+                    transition: ease-out .3s;
+                    flex-direction: column;
+                    i{
+                        color: lightskyblue;
+                        transition: ease-out .3s;
+                    }
+                    p{
+                        padding: 3% 0%;
+                        color: white;
+                    }
+                    &:hover{
+                        box-shadow: 1px 1px 9px lightskyblue;
+                        cursor: pointer;
+                        i{
+                            color: white;
+                        }
+                    }
+                }
+            }
+            .content{
+                align-self: center;
+                width: 90%;
+                padding: 2%;
+                padding-bottom: 5%;
+                margin: 2%;
+                margin-bottom: 15%;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                border-radius: 5px;
+                box-shadow: 1px 1px 9px lightskyblue;
+                background-color: rgb(10%,10%,10%);
+                .post{
+                    width: 100%;
+                    margin: 2%;
+                    margin-bottom: 5%;
+                    display: flex;
+                    justify-content: center;
+                    flex-direction: column;
+                    .img-wrapper{
+                        flex: 1;
+                        // width: 100%;
+                        img{
+                            width: 100%;
+                        }
+                    }
+                    .post-text{
+                        flex: 1;
+                        padding: 1%;
+                        h1{
+                            color: white;
+                            margin: 0%;
+                        }
+                        p{
+                            color: white;
+                        }
+                    }
+                }
+            }
+        }
+        .about-page{
+            background-color: rgb(10%,10%,10%);
+            width: 96%;
+            padding: 2%;
+            box-shadow: 1px 1px 9px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 0% 0%;
+            .banner{
+                height: 30vh;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                padding: 0% 3%;
+                h1{
+                    width: 100%;
+                    text-align: center;
+                    color: white;
+                }
+                p{
+                    width: 100%;
+                    text-align: center;
+                    color: white;
+                }
+            }
+            .content{
+                width: 80%;
+                justify-content: center;
+                margin-bottom: 2%;
+                display: flex;
+                flex-direction: column;
+                .post{
+                    display: flex;
+                    flex-direction: column;
+                    .img-wrapper{
+                        width: 100%;
+                        flex: 1;
+                        margin-right: 2%;
+                        img{
+                            width: 100%;
+                        }
+                    }
+                    .post-text{
+                        flex: 1;
+                        padding: 0%;
+                        h1{
+                            margin: 0%;
+                            color: white;
+                        }
+                        p{
+                            color: white;
+                        }
+                    }
+                }
+            }
+        }
+        .health-page{
+            background-color: rgb(10%,10%,10%);
+            width: 96%;
+            padding: 2%;
+            box-shadow: 1px 1px 9px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 0% 0%;
+            .banner{
+                height: 30vh;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                h1{
+                    color: white;
+                }
+                p{
+                    color: white;
+                }
+            }
+            .content{
+                width: 80%;
+                justify-content: center;
+                margin-bottom: 2%;
+                display: flex;
+                flex-direction: column;
+                .post{
+                    display: flex;
+                    flex-direction: row;
+                    padding: 0%;
+                    .post-text{
+                        margin:1%;
+                        h1{
+                            margin: 0%;
+                            color: white;
+                        }
+                        p{
+                            color: white;
+                        }
+                        .img-wrapper{
+                            // float: right;
+                            width: 100%;
+                            // width: 300px;
+                            // margin: 1%;
+                            img{
+                                width: 100%;
+                            }
+                        }
+                    }
+    
+                }
+                .post-list-wrapper{
+                    margin: 5% 0%;
+                    display: flex;
+                    align-self: flex-start;
+                    width: 100%;
+                    justify-content: space-between;
+                    .img-wrapper{
+                        flex: 1;
+                        img{
+                            width: 100%;
+                        }
+                    }
+                    .post-list{
+                            flex: 1;
+                            display: flex;
+                            flex-direction: column;
+                            padding: 0%;
+                            padding-left: 2%;
+                        h1{
+                            padding: 5%;
+                            margin: 0%;
+                            margin-top: 2%;
+                            color: white;
+                            box-shadow: 1px 1px 6px lightskyblue;
+                        }
+                        ul{
+                            display: flex;
+                            flex-direction: column;
+                            list-style-type: none;
+                            padding: 0%;
+                            margin-top: auto;
+                            width: 100%;
+                            li{
+                                color: white;
+                                padding: 2%;
+                                margin: 1%;
+                                box-shadow: 1px 1px 6px lightskyblue;
+                                border-radius: 5px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@include mediaMd-Sm{
+}
+@include mediaSm{
+    body{
+        .header{
+            // background-color: rgb(10%,10%,10%);
+            .nav{
+                padding: 0% 2%;
+                margin: 0%;
+                margin-top: 2%;
+                // background-color: rgb(10%,10%,10%);
+                // background-color: red;
+                .main-nav{
+                    display: flex;
+                    justify-content: center;
+                    align-content: center;
+                    flex-direction: column;
+                    .top{
+                        padding-left:10% ;
+                        flex: 1;
+                        display: flex;
+                        .logo{
+                            a{
+                                text-decoration: none;
+                                display: flex;
+                                align-items: center;
+                                margin: 0%;
+                                h1{
+                                    margin: 0%;
+                                    font-size: 1.5rem;
+                                    color: white;
+                                    i{
+                                        color: white;
+                                        margin: 0%;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    .bottom{
+                        padding-top:2%;
+                        padding-bottom: 1%;
+                        display: flex;
+                        justify-content: center;
+                        flex-direction: row-reverse;
+                        .left-links{
+                            .mobile-menu{
+                                display: flex;
+                                justify-content: flex-end;
+                            }
+                            flex: 4;
+                            display: flex;
+                            align-items: center;
+                            flex-wrap: nowrap;
+                            justify-content: flex-end;
+                            a{
+                                display: none;
+                                letter-spacing: 2px;
+                                flex-wrap: nowrap;
+                                padding: 0px 5px;
+                                text-decoration: none;
+                                color: white;
+                                font-weight: bold;
+                                font-size: 1.2rem;
+                            }
+                            .current{
+                                color: lightskyblue;
+                            }
+                        }
+                        .socials{
+                            flex: 1;
+                            margin: 0%;
+                            padding: 0% 0%;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            a{
+                                margin: 1%;
+                                margin-bottom: 0%;
+                                background-color: white;
+                                border-radius: 5px;
+                                transition: ease-in .1s;
+                                &:hover{
+                                    background-color: rgb(10%,10%,10%);
+                                }
+                                i{  
+                                    padding:0.3rem 0.7rem;
+                                    color: black;
+                                    transition: ease-in .1s;
+                                    &:hover{
+                                        color: lightskyblue;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .front-page{
+            display: flex;
+            flex-direction: column;
+            box-shadow: 1px 1px 9px;
+            .banner{
+                height: 40vh;
+                background: url(../img/bed-1.jpg);
+                background-size: cover;
+                background-position: center;
+                background-repeat: no-repeat;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                .banner-text-wrapper{
+                    margin-top: 9vh;
+                    .main-title{
+                        margin: 0%;
+                        text-align: center;
+                        border-radius: 50px;
+                        h1{
+                            width: 100%;
+                            text-align: center;
+    
+                            color: black;
+                        }
+                    }
+                    .sub-title{
+                        h1{
+                            width: 100%;
+                            text-align: center;
+                            color: black;
+                        }
+                    }
+                }
+            }
+            .cards-wrapper{
+                transform: translateY(0%);
+                display: flex;
+                justify-content: center;
+                flex-direction: column;
+                align-self: center;
+                width: 90%;
+                margin: 5% 0%;
+                position: relative;
+                .card{
+                    margin: 3%;
+                    flex: 1;
+                    padding: 5%;
+                    background-color: rgba(10%,10%,10%,.9);
+                    display: flex;
+                    align-items: center;
+                    // justify-content: row;
+
+                    // height: 12vh;
+                    box-shadow: 1px 1px 9px;
+                    transition: ease-out .3s;
+                    flex-direction: column;
+                    i{
+                        color: lightskyblue;
+                        transition: ease-out .3s;
+                    }
+                    p{
+                        padding: 3% 0%;
+                        color: white;
+                    }
+                    &:hover{
+                        box-shadow: 1px 1px 9px lightskyblue;
+                        cursor: pointer;
+                        i{
+                            color: white;
+                        }
+                    }
+                }
+            }
+            .content{
+                align-self: center;
+                width: 90%;
+                padding: 2%;
+                padding-bottom: 5%;
+                margin: 2%;
+                margin-bottom: 15%;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                border-radius: 5px;
+                box-shadow: 1px 1px 9px lightskyblue;
+                background-color: rgb(10%,10%,10%);
+                .post{
+                    width: 100%;
+                    margin: 2%;
+                    margin-bottom: 5%;
+                    display: flex;
+                    justify-content: center;
+                    flex-direction: column;
+                    .img-wrapper{
+                        flex: 1;
+                        // width: 100%;
+                        img{
+                            width: 100%;
+                        }
+                    }
+                    .post-text{
+                        flex: 1;
+                        padding: 1%;
+                        h1{
+                            color: white;
+                            margin: 0%;
+                        }
+                        p{
+                            color: white;
+                        }
+                    }
+                }
+            }
+        }
+        .about-page{
+            background-color: rgb(10%,10%,10%);
+            width: 96%;
+            padding: 2%;
+            box-shadow: 1px 1px 9px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 0% 0%;
+            .banner{
+                height: 30vh;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                padding: 0% 3%;
+                h1{
+                    width: 100%;
+                    text-align: center;
+                    color: white;
+                    font-size: 1.7rem;
+
+                }
+                p{
+                    width: 100%;
+                    text-align: center;
+                    color: white;
+                }
+            }
+            .content{
+                width: 80%;
+                justify-content: center;
+                margin-bottom: 2%;
+                display: flex;
+                flex-direction: column;
+                .post{
+                    display: flex;
+                    flex-direction: column;
+                    .img-wrapper{
+                        width: 100%;
+                        flex: 1;
+                        margin-right: 2%;
+                        img{
+                            width: 100%;
+                        }
+                    }
+                    .post-text{
+                        flex: 1;
+                        padding: 0%;
+                        h1{
+                            margin: 0%;
+                            color: white;
+                        }
+                        p{
+                            color: white;
+                        }
+                    }
+                }
+            }
+        }
+        .health-page{
+            background-color: rgb(10%,10%,10%);
+            width: 96%;
+            padding: 2%;
+            box-shadow: 1px 1px 9px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 0% 0%;
+            .banner{
+                height: 30vh;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                h1{
+                    font-size: 1.7rem;
+                    color: white;
+                }
+                p{
+                    color: white;
+                }
+            }
+            .content{
+                width: 80%;
+                justify-content: center;
+                margin-bottom: 2%;
+                display: flex;
+                flex-direction: column;
+                .post{
+                    display: flex;
+                    flex-direction: row;
+                    padding: 0%;
+                    .post-text{
+                        margin:1%;
+                        h1{
+                            margin: 0%;
+                            color: white;
+                        }
+                        p{
+                            color: white;
+                        }
+                        .img-wrapper{
+                            // width: 100%;
+                            width: 100%;
+                            margin: 1%;
+                            img{
+                                width: 100%;
+                            }
+                        }
+                    }
+    
+                }
+                .post-list-wrapper{
+                    margin: 5% 0%;
+                    display: flex;
+                    align-self: flex-start;
+                    width: 100%;
+                    justify-content: space-between;
+                    .img-wrapper{
+                        flex: 1;
+                        img{
+                            width: 100%;
+                        }
+                    }
+                    .post-list{
+                            flex: 1;
+                            display: flex;
+                            flex-direction: column;
+                            padding: 0%;
+                            padding-left: 2%;
+                        h1{
+                            padding: 5%;
+                            margin: 0%;
+                            margin-top: 2%;
+                            color: white;
+                            box-shadow: 1px 1px 6px lightskyblue;
+                        }
+                        ul{
+                            display: flex;
+                            flex-direction: column;
+                            list-style-type: none;
+                            padding: 0%;
+                            margin-top: auto;
+                            width: 100%;
+                            li{
+                                color: white;
+                                padding: 2%;
+                                margin: 1%;
+                                box-shadow: 1px 1px 6px lightskyblue;
+                                border-radius: 5px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

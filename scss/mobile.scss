@@ -2,6 +2,119 @@
 }
 @include mediaLg{
     body{
+        .front-page{
+            display: flex;
+            flex-direction: column;
+            box-shadow: 1px 1px 9px;
+            .banner{
+                height: 60vh;
+                background: url(../img/bed-1.jpg);
+                background-size: cover;
+                background-position: center;
+                background-repeat: no-repeat;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                .banner-text-wrapper{
+                    margin-top: 15vh;
+                    .main-title{
+                        margin: 0%;
+                        text-align: center;
+                        border-radius: 50px;
+                        h1{
+                            width: 100%;
+                            text-align: center;
+    
+                            color: black;
+                        }
+                    }
+                    .sub-title{
+                        h1{
+                            width: 100%;
+                            text-align: center;
+                            color: black;
+                        }
+                    }
+                }
+            }
+            .cards-wrapper{
+                transform: translateY(-50%);
+                display: flex;
+                justify-content: center;
+                align-self: center;
+                width: 70%;
+                margin: 1% 0%;
+                position: relative;
+                .card{
+                    margin: 1%;
+                    flex: 1;
+                    padding: 5% 5%;
+                    background-color: rgba(10%,10%,10%,.9);
+                    display: flex;
+                    align-items: center;
+                    height: 12vh;
+                    box-shadow: 1px 1px 9px;
+                    transition: ease-out .3s;
+                    flex-direction: column;
+                    i{
+                        color: lightskyblue;
+                        transition: ease-out .3s;
+                    }
+                    p{
+                        padding: 3% 0%;
+                        color: white;
+                    }
+                    &:hover{
+                        box-shadow: 1px 1px 9px lightskyblue;
+                        cursor: pointer;
+                        i{
+                            color: white;
+                        }
+                    }
+                }
+            }
+            .content{
+                align-self: center;
+                width: 80%;
+                padding: 2%;
+                padding-bottom: 5%;
+                margin: 2%;
+                margin-bottom: 15%;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                border-radius: 5px;
+                box-shadow: 1px 1px 9px lightskyblue;
+                background-color: rgb(10%,10%,10%);
+                .post{
+                    width: 90%;
+                    margin: 2%;
+                    margin-bottom: 5%;
+                    display: flex;
+                    justify-content: center;
+                    // flex-direction: column;
+                    .img-wrapper{
+                        flex: 1;
+                        // width: 100%;
+                        img{
+                            width: 100%;
+                        }
+                    }
+                    .post-text{
+                        flex: 1;
+                        padding: 1%;
+                        h1{
+                            color: white;
+                            margin: 0%;
+                        }
+                        p{
+                            color: white;
+                        }
+                    }
+                }
+            }
+        }
         .health-page{
             background-color: rgb(10%,10%,10%);
             width: 96%;
@@ -61,6 +174,7 @@
                     align-self: flex-start;
                     width: 100%;
                     justify-content: space-between;
+                    flex-direction: column;
                     .img-wrapper{
                         flex: 1;
                         img{
@@ -429,7 +543,8 @@
                     display: flex;
                     align-self: flex-start;
                     width: 100%;
-                    justify-content: space-between;
+                    flex-direction: column;
+                    // justify-content: space-between;
                     .img-wrapper{
                         flex: 1;
                         img{
@@ -838,6 +953,61 @@
                                 border-radius: 5px;
                             }
                         }
+                    }
+                }
+            }
+        }
+        .contact-page{
+            width: 96%;
+            padding: 2%;
+            padding-bottom: 5%;
+            margin: 0%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            box-shadow: 1px 1px 9px;
+            background-color: rgb(10%,10%,10%);
+            .banner{
+                height: 30vh;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                h1{
+                    color: white;
+                }
+                p{
+                    color: white;
+                }
+            }
+            form{
+                border-radius: 5px;
+
+                #input-boxes{
+                    #small-boxes{
+                        #name-input{
+                            border: none;
+                            font-size:  1rem;
+                            border-radius: 5px;
+
+                        }
+                        #email-input{
+                            font-size:  1rem;
+                            border: none;
+                            border-radius: 5px;
+
+                        }
+                    }
+                    #text-input{
+                        border: none;
+                        border-radius: 5px;
+
+                        font-size:  1rem;
+                    }
+                }
+                #button-box{
+                    button{
+                        border-radius: 5px;
                     }
                 }
             }

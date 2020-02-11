@@ -297,6 +297,7 @@ body {
     width: 96%;
     padding: 2%;
     padding-bottom: 5%;
+    padding-bottom: 45%;
     margin: 0%;
     display: flex;
     flex-direction: column;
@@ -838,21 +839,25 @@ body {
       align-content: center;
       flex-direction: column; }
       body .header .nav .main-nav .top {
-        padding-left: 10%;
+        padding-left: 0%;
         flex: 1;
         display: flex; }
-        body .header .nav .main-nav .top .logo a {
-          text-decoration: none;
+        body .header .nav .main-nav .top .logo {
           display: flex;
-          align-items: center;
-          margin: 0%; }
-          body .header .nav .main-nav .top .logo a h1 {
-            margin: 0%;
-            font-size: 1.5rem;
-            color: white; }
-            body .header .nav .main-nav .top .logo a h1 i {
-              color: white;
-              margin: 0%; }
+          justify-content: center; }
+          body .header .nav .main-nav .top .logo a {
+            text-decoration: none;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0%; }
+            body .header .nav .main-nav .top .logo a h1 {
+              margin: 0%;
+              font-size: 1.5rem;
+              color: white; }
+              body .header .nav .main-nav .top .logo a h1 i {
+                color: white;
+                margin: 0%; }
       body .header .nav .main-nav .bottom {
         padding-top: 2%;
         padding-bottom: 1%;
@@ -905,7 +910,7 @@ body {
     flex-direction: column;
     box-shadow: 1px 1px 9px; }
     body .front-page .banner {
-      height: 40vh;
+      height: 55vh;
       background: url(../img/bed-1.jpg);
       background-size: cover;
       background-position: center;
@@ -1118,7 +1123,7 @@ body {
   body .contact-page {
     width: 96%;
     padding: 2%;
-    padding-bottom: 5%;
+    padding-bottom: 45%;
     margin: 0%;
     display: flex;
     flex-direction: column;
@@ -1132,11 +1137,14 @@ body {
       align-items: center;
       flex-direction: column; }
       body .contact-page .banner h1 {
-        color: white; }
+        color: white;
+        text-align: center; }
       body .contact-page .banner p {
+        text-align: center;
         color: white; }
     body .contact-page form {
-      border-radius: 5px; }
+      margin-top: 10vh;
+      width: 90%; }
       body .contact-page form #input-boxes #small-boxes #name-input {
         border: none;
         font-size: 1rem;

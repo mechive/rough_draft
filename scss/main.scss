@@ -49,6 +49,7 @@ body{
                     justify-content: center;
                     .left-links{
                         .mobile-menu{
+                            cursor: pointer;
                             display: none;
                             color: white;
                         }
@@ -96,6 +97,39 @@ body{
                                     color: lightskyblue;
                                 }
                             }
+                        }
+                    }
+                }
+                .mobile-menu-wrapper{
+                    position: relative;
+                    top: 0;
+                    left: 0;
+                    height: 100vh;
+                    width: 100%;
+                    background-color: rgb(10%,10%,10%);
+                    display: none;
+                    z-index: 10;
+                    justify-content: flex-start;
+                    flex-direction: column;
+                    align-items: center;
+                    margin: 0%;
+                    padding: 0%;
+                    .links{
+                        margin-top: 15vh;
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        width: 70%;
+                        a{
+                            color: white;
+                            text-align: center;
+                            width: 100%;
+                            text-decoration: none;
+                            font-size: 2rem;
+                            margin: 2% 0%;
+                            padding: 2% 0%;
+                            background-color: rgb(10%,10%,10%);
+                            box-shadow: 1px 1px 9px lightskyblue;
                         }
                     }
                 }

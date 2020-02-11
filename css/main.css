@@ -50,7 +50,9 @@ body {
             body .header .nav .main-nav .bottom .left-links .mobile-menu {
               cursor: pointer;
               display: none;
-              color: white; }
+              color: white;
+              padding: 5%;
+              background-color: red; }
             body .header .nav .main-nav .bottom .left-links a {
               display: flex;
               letter-spacing: 2px;

@@ -5,48 +5,55 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="fontawesome-free-5.12.0-web/css/all.css">
-
-    <title>Modern_Theme</title>
+    <link href="https://fonts.googleapis.com/css?family=Lemonada&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Heebo&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Cabin&display=swap" rel="stylesheet">
+    <title>Contact</title>
 </head>
 <body>
-    <!-- navigation -->
-    <div class="nav">
-        <div class="left">
-            <div class="logo">
-                <a href="index.html">
-                    <h1><i class="fas fa-baby-carriage"></i>  Baby Train with Elaine</h1>
-                </a>
-            </div>
-        </div>
-        <div class="right">
-            <div class="nav-menu">
-                <ul>
-                    <li>
-                        <a href="about.html">About</a>
-                    </li>
-                    <li>
-                        <a href="consult.html">Consulting</a>
-                    </li>
-                    <li>
-                        <a href="contact.html" class="current">Contact</a>
-                    </li>
-                </ul>
+    <div class="header">
+        <div class="nav">
+            <div class="main-nav">
+                <div class="top">
+                    <div class="logo">
+                        <a href=""><h1><i class="fas fa-baby-carriage fa-1x"></i> Baby Train with Elaine</h1></a>
+                    </div>
+                </div>
+                <div class="bottom">
+                    <div class="left-links">
+                        <a href="index.html">Home</a>
+                        <a href="about.html">About Us</a>
+                        <a href="health.html">Sleep & Health</a>
+                        <a href="contact.html" class="current">Contact Us</a>
+                    </div>
+                    <div class="socials">
+                        <a href=""><i class="fab fa-facebook-f"></i></a>
+                        <a href=""><i class="fab fa-instagram"></i></a>
+                        <a href=""><i class="fab fa-twitter"></i></a>
+                        <a href=""><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
-    <main class="front-page">
-        <h1 class="lg-heading">
-            Baby Train with Elaine 
-        </h1>
-        <h3 class="sm-heading">
-            
-            The gift of a good nights sleep
-        </h3>
-        <div class="buttons">
-            <i class="fab fa-facebook fa-2x"></i>
-            <i class="fab fa-instagram fa-2x"></i>
-            <i class="fab fa-twitter fa-2x"></i>
-        </div>
-    </main>
+    <main id="contact">
+        <h1>- Get in Touch -</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, aut?</p>
+        <form name="contact" method="POST" data-netlify-recaptcha="true" data-netlify="true">
+            <div id="input-boxes">
+                <div id="small-boxes">
+                    <input id="name-input" type="text" name="name" placeholder="Name..."/>
+                    <input id="email-input" type="email" name="email" placeholder="Email..."/>
+                </div>
+                <textarea id="text-input" name="message" placeholder="Message..."></textarea>
+            </div>
+            <div id="button-box">
+              <button type="submit">Submit</button>
+            </div>
+        </form>
+    </main>   
+    <div class="footer">
+        <p>Copyright &copy; 2020</p>
+    </div>
 </body>
 </html>
